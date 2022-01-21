@@ -1,0 +1,31 @@
+FUNCLIST
+The following set of functions is provided for testing 
+the root() and integral() functions
+These functions are selected for clarity in such a way that 
+the graphs of each of them intersect with each other 
+on the segment [-2, 2], and the area under their graphs, i.e. the value
+of the corresponding definite integral, is positive on the same segment.
+
+To specify a function as a test parameter, type its number as an argument.
+
+1) f1 = -x^2 + 4
+
+2) f2 = exp(x)
+
+3) f3 = x + 1
+
+4) f4 = sqrt(x + 3)
+
+5) f5 = x^3
+
+6) f6 = sqrt(5 - x)
+
+7) f7 = x^2 / 2 + 3x
+
+To test chosen function, run the program with the next flags:
+
+ - To calculate the intersection point:
+   ./program -test root <func1№> <func2№> <lborder> <rborder> <eps> <optional flags>
+
+ - To calculate the definite integral:
+   ./program -test integral <func№> <lborder> <eps> <rborder>

@@ -1,0 +1,52 @@
+INTEGRAL CALCULATION APPLICATION
+The program calculates the area bounded by functions (by default):
+-- e^x + 2
+-- -1/x
+-- -(2 + x)/3
+                                                                          
+The tangent method (Newton's method) is used to 
+find the intersection points, and the quadrature formula 
+of rectangles is used to calculate te according 
+definite integral
+                                                         
+MAIN OPTIONS:
+                                         
+-help -- shows the list of available options of the program 
+                                                  
+-isect -- prints abscises of intersection points of graphs of 
+corresponding functions obtained as a result of approximate 
+tangent calculation by the root() function 
+                                           
+-iter -- prints the number of iterations of the intersection
+points search method performing by the root() function
+
+-debug -- starts debugging mode and prints intermediate values 
+of intersection points and integrals
+                                        
+-test root/integral <according operands> -- starts testing 
+the root() and integral() functions for the
+specified functions from the list of available ones 
+(you can see it using the -funclist option)
+OPERANDS:
+    MODE SPECIFIERS:
+    1) root -- testing of intersection points calculation function root()
+    Arguments:
+      -test root f g a b eps
+	f - number of the first function from the funclist
+	g - number of the second function from the funclist
+	a - left border of the point localization segment
+	b - right border of the point localization segment
+	eps - calculation error
+    2) integral -- testing of definite integral calculation function integral()
+    Arguments:
+      -test integral f a b eps
+	f - number of the function from the funclist
+	a - left border of the integration segment
+	b - right border of the integration segment
+	eps - calculation error
+
+Testing can also be performed with the flags -isect, -iter, -debug that were listed above          
+                      
+-funclist -- displays a list of functions that are
+available for testing functions for calculating
+intersection points (root()) and a definite integral (integral())
